@@ -73,14 +73,18 @@ py-modulo-06-exercicio/
 - Python 3.x instalado
 - `pip` disponível no terminal
 
-### 1. Clone o repositório
+### 1. Fork do repositório
+
+Clique no botão **Fork** no GitHub para criar uma cópia do repositório na sua conta.
+
+### 2. Clone o seu fork
 
 ```bash
-git clone https://github.com/victorpiressk/<nome-do-repositorio>.git
+git clone https://github.com/<seu-usuario>/<nome-do-repositorio>.git
 cd <nome-do-repositorio>/mysite
 ```
 
-### 2. Crie e ative o ambiente virtual
+### 3. Crie e ative o ambiente virtual
 
 ```bash
 python -m venv env
@@ -96,19 +100,19 @@ python -m venv env
 source env/bin/activate
 ```
 
-### 3. Instale as dependências
+### 4. Instale as dependências
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Aplique as migrações
+### 5. Aplique as migrações
 
 ```bash
 python manage.py migrate
 ```
 
-### 5. Crie um superusuário
+### 6. Crie um superusuário
 
 Para acessar o painel admin e criar posts, você precisará de um superusuário:
 
@@ -118,7 +122,7 @@ python manage.py createsuperuser
 
 Siga as instruções no terminal para definir usuário, e-mail e senha.
 
-### 6. Rode o servidor
+### 7. Rode o servidor
 
 ```bash
 python manage.py runserver
