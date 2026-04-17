@@ -34,34 +34,33 @@ Os templates HTML foram fornecidos pelo tutor do curso como material de apoio, p
 ## 📂 Estrutura do Projeto
 
 ```
-py-modulo-06-exercicio/
-└── mysite/                         # Raiz do projeto
-    ├── blog/                       # App principal — models, views, admin, urls
-    │   ├── migrations/             # Migrações do banco de dados
-    │   ├── models/                 # Model Post
-    │   ├── views/                  # Views baseadas em classe (ListView, DetailView)
-    │   ├── admin.py                # Configuração do painel admin para Post
-    │   ├── apps.py
-    │   ├── factories.py            # Factories para geração de dados nos testes
-    │   └── urls.py                 # Rotas do blog
-    ├── config/                     # Configurações do projeto Django
-    │   ├── settings.py
-    │   ├── urls.py                 # URLs raiz (admin + blog)
-    │   ├── wsgi.py
-    │   └── asgi.py
-    ├── templates/                  # Templates HTML (fornecidos pelo tutor)
-    │   ├── base.html
-    │   ├── index.html              # Lista de posts publicados
-    │   ├── post_detail.html        # Detalhe de um post
-    │   └── sidebar.html
-    ├── tests/                      # Testes automatizados
-    │   ├── models/
-    │   │   └── test_post.py        # Testa criação de post via factory
-    │   └── views/
-    │       └── test_post.py        # Testa que a home retorna status 200
-    ├── manage.py
-    ├── pytest.ini
-    └── requirements.txt
+mysite/                         # Raiz do projeto
+├── blog/                       # App principal — models, views, admin, urls
+│   ├── migrations/             # Migrações do banco de dados
+│   ├── models/                 # Model Post
+│   ├── views/                  # Views baseadas em classe (ListView, DetailView)
+│   ├── admin.py                # Configuração do painel admin para Post
+│   ├── apps.py
+│   ├── factories.py            # Factories para geração de dados nos testes
+│   └── urls.py                 # Rotas do blog
+├── config/                     # Configurações do projeto Django
+│   ├── settings.py
+│   ├── urls.py                 # URLs raiz (admin + blog)
+│   ├── wsgi.py
+│   └── asgi.py
+├── templates/                  # Templates HTML (fornecidos pelo tutor)
+│   ├── base.html
+│   ├── index.html              # Lista de posts publicados
+│   ├── post_detail.html        # Detalhe de um post
+│   └── sidebar.html
+├── tests/                      # Testes automatizados
+│   ├── models/
+│   │   └── test_post.py        # Testa criação de post via factory
+│   └── views/
+│       └── test_post.py        # Testa que a home retorna status 200
+├── manage.py
+├── pytest.ini
+└── requirements.txt
 ```
 
 ---
@@ -80,8 +79,8 @@ Clique no botão **Fork** no GitHub para criar uma cópia do repositório na sua
 ### 2. Clone o seu fork
 
 ```bash
-git clone https://github.com/<seu-usuario>/<nome-do-repositorio>.git
-cd <nome-do-repositorio>/mysite
+git clone https://github.com/<seu-usuario>/mysite.git
+cd mysite
 ```
 
 ### 3. Crie e ative o ambiente virtual
