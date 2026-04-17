@@ -3,6 +3,7 @@ from faker import Factory as FakerFactory
 
 from django.contrib.auth.models import User
 from django.utils.timezone import now
+from django.utils.text import slugify
 
 from blog.models import Post
 
@@ -25,10 +26,12 @@ class UserFactory(factory.django.DjangoModelFactory):
             if create:
                 user.save()
         return user
-    
+
 
 class PostFactory(factory.django.DjangoModelFactory):
     title = factory.LazyAttribute(lambda x: faker.sentence())
+    slug = factory.LazyAttribute(lambda o: slugify(o.title))
+    content = factory.LazyAttribute(lambda x: faker.paragraph())
     created_on = factory.LazyAttribute(lambda x: now())
     author = factory.SubFactory(UserFactory)
     status = 0
